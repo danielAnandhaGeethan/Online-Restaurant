@@ -1,0 +1,39 @@
+
+h2 {
+    font-size: 39px;
+    color: whitesmoke;
+}
+
+body {
+    text-align: center;
+    background-image: url('IMAGES/bg.png');
+    background-size: cover;
+}
+
+form {
+    margin-top: 140px;
+}
+
+
+input::placeholder {
+    font-size: 15px; 
+    color: honeydew;
+}
+
+input {
+    height: 25px;
+    outline: none;
+    border: none;
+    color: black;
+    border-bottom: solid 1.5px honeydew;
+    margin-bottom: 20px;
+    background: transparent;
+}
+
+#submit {
+    border: none;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 0px;
+}

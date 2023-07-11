@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    background-image: url('IMAGES/bg.png');
+    background-size: cover;
+}
+
+h2 {
+    font-size: 39px;
+    color: darkslategrey;
+    margin-bottom: 10px;
+}
+
+#home {
+    margin-top: 1px;
+    background-color: transparent;
+    border: none;
+    color: darkslategrey;
+    font-size: 17px;
+}
+
+#submit {
+    border: none;
+    color: darkslategrey;
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 0px;
+}
+
+input {
+    height: 25px;
+    outline: none;
+    border: none;
+    color: black;
+    border-bottom: solid 1.5px darkslategrey;
+    margin-bottom: 20px;
+    background: transparent;
+}

@@ -1,0 +1,149 @@
+body {
+    text-align: center;
+    background-image: url('IMAGES/bg.png');
+    background-size: cover;
+}
+
+#img {
+    height: 175px;
+    width: 175px;
+    border-radius: 29px;
+    background-color: lightblue;
+    padding: 10px 10px 10px 10px;
+}
+
+#home, #cart, #logout, #orders {
+    margin-top: 1px;
+    background-color: transparent;
+    border: none;
+    margin-right: 8px;
+    color: whitesmoke;
+    font-size: 18px;
+    padding-top: 10px;
+    float: left;
+}
+
+#home {
+    margin-left: 55px;
+}
+
+.container {
+    text-align: center;
+    float: left;
+    margin-top: 55px;
+    margin-bottom: 45px;
+    background-color: whitesmoke;
+    padding: 19px 19px 19px 19px;
+    width: 250px;
+    margin-left: 35px;
+    border-radius: 29px;
+}
+
+.name, .price, .count, .cart {
+    margin: 11px 11px 11px 11px;
+    font-size: large;
+}
+
+#quantity {
+    width: 125px;
+    border: none;
+    height: 29px;
+    text-align: center;
+    font-size: 19px;
+}
+
+#quantity:active, #quantity:hover {
+    outline: none;
+    border: none;
+}
+
+
+.add {
+    border: none;
+    border-radius: 29px;
+    background-color: lightblue;
+    font-size: 21px;
+}
+
+a{
+    color: black;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.nn {
+    background-color: lightblue;
+    border: none;
+    border-radius: 15px;
+    width: 30px;
+    font-size: 25px;
+}
+
+#name {
+    float: right;
+    margin-top: 10px;
+    font-size: 24px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    color: black;
+    margin-top: 9px;
+}
+
+#search {
+    width: 390px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 19px;
+    padding-left: 18px;
+    padding-right: 10px;
+    outline: none;
+    margin-right: 185px;
+    margin-left: 100px;
+}
+
+#dp_image {
+    height: 37px;
+    width: 45px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+    margin-top: 0px;
+}
+
+#dp {
+    float: right;
+    margin-right: 60px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#search:active {
+    border: none;
+    outline: none;
+}
+
+#search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.name .desc{
+    visibility: hidden;
+    width: 155px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.name:hover .desc {
+    visibility: visible;
+}
