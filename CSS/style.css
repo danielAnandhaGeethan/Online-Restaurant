@@ -1,52 +1,53 @@
 #header {
-    text-align: center;
-    font-size: xx-large;
-    color: darkslategrey;
-    box-shadow: 5px 5px 5px 5px;
-    width: 400px;
-    background-color: lavender;
-    margin-left: 480px;
+  text-align: center;
+  font-size: xx-large;
+  color: darkslategrey;
+  margin-top: 5px;
+  box-shadow: 5px 5px 5px 5px;
+  background-color: lavender;
+  display: flex;
+  justify-content: center;
 }
 
 body {
-    background-image: url('IMAGES/bg.png');
-    background-size: cover;
+  background-image: url("IMAGES/bg.png");
+  background-size: cover;
 }
 
 .container {
-    margin-top: 40px;
-    width: 1300px;
-    margin-left: 46px;
-    height: 490px;
+  margin-top: 40px;
+  width: 100%;
+  margin-left: 46px;
+  height: 490px;
 }
 
 .box {
-    float: left;
-    margin-top: 35px;
-    margin-left: 15px;
-    width: 400px;
-    height: 450px;
-    border: solid darkslategrey;
-    background: transparent;
-    font-size: 35px;
+  float: left;
+  margin-top: 35px;
+  margin-left: 15px;
+  width: 400px;
+  height: 450px;
+  border: solid darkslategrey;
+  background: transparent;
+  font-size: 35px;
 }
 
 .box:hover {
-    width: 420px;
-    height: 480px;
-    margin-top: 25px;
-    color: whitesmoke;
-    font-size: 44px;
+  width: 420px;
+  height: 480px;
+  margin-top: 25px;
+  color: whitesmoke;
+  font-size: 44px;
 }
 
 #about:hover {
-    background-color: springgreen;
+  background-color: springgreen;
 }
 
 #login:hover {
-    background-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
 
 #signup:hover {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }

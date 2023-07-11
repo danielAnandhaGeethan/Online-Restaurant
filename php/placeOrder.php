@@ -26,7 +26,7 @@
         $_SESSION['order_id'] = $temp;
         
         if($res){
-            header('Location: menu.php');
+            header('Location: ../php/menu.php');
             echo '<script> alert(". . . ORDER PLACED SUCCESSFULLY :)"); </script>';
         } else{
             die("Connection Failed : " . mysqli_connect_error());

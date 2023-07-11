@@ -18,12 +18,12 @@
 ?>
 
 <head>
-    <link rel="stylesheet" href="CSS/cart_orders.css">
+    <link rel="stylesheet" href="../css/cart_orders.css">
 </head>
 
 <body>
     <h2>ORDERS</h2>
-    <button id="home" onclick="window.location.href='index.php'"><b>HOME</b></button>
+    <button id="home" onclick="window.location.href='../php/index.php'"><b>HOME</b></button>
 
     <?php
 
@@ -98,7 +98,7 @@
         ?>
 
         <div class="cancel">
-            <form action="cancel.php" method="POST">
+            <form action="../php/cancel.php" method="POST">
                 <div style="display:none;">
                     <input type="text" name="user_id" value="<?php echo $userID; ?>">
                 </div>
@@ -106,7 +106,7 @@
             </form>
         </div>
         <div class="delivered">
-            <form action="delivered.php" method="POST">
+            <form action="../php/delivered.php" method="POST">
                 <div style="display:none;">
                     <input type="text" name="user_id" value="<?php echo $userID; ?>">
                     <input type="text" name="order_id" value="<?php echo $orderID; ?>">

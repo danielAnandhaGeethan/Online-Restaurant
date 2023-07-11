@@ -1,0 +1,45 @@
+<head>
+  <link rel="stylesheet" href="../css/profile.css" />
+</head>
+
+<?php
+
+    session_start();
+
+?>
+
+<body>
+  <h2>PROFILE</h2>
+  <button id="home" onclick="window.location.href='../php/index.php';">
+    <b>HOME</b>
+  </button>
+  <div id="modify">*Fill Only The Data You Wish To Modify*</div>
+  <form
+    action="../php/profile.php"
+    method="POST"
+    enctype="multipart/form-data"
+    id="container"
+  >
+    <input
+      type="text"
+      placeholder="Username"
+      name="username"
+      value=""
+    /><br /><br />
+    <input
+      type="password"
+      name="pass"
+      placeholder="Password"
+      value=""
+    /><br /><br />
+    <input
+      type="password"
+      name="confirm_pass"
+      placeholder="Confirm Password"
+      value=""
+    /><br /><br />
+    <span id="content">Display Picture</span>
+    <input id="dp" name="fileToUpload" type="file" /><br />
+    <input type="submit" id="submit" value="ENTER" />
+  </form>
+</body>

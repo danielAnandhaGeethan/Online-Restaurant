@@ -25,7 +25,7 @@
                     $res0 = mysqli_query($conn,$sql0);
                     $fl = 1;
                     
-                    echo '<script> window.location.href = "menu.php"; </script>';
+                    echo '<script> window.location.href = "../php/menu.php"; </script>';
                 }
             }
         }
@@ -40,7 +40,7 @@
                 $res2 = mysqli_query($conn,$sql2);
 
                 if($res2){
-                    echo '<script> window.location.href = "menu.php"; </script>';
+                    echo '<script> window.location.href = "../php/menu.php"; </script>';
                 }
             }
         }

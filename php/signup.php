@@ -23,14 +23,14 @@ session_start();
 
                 $_SESSION['userID'] = $row['User_id'];
                 echo '<script> alert("Your User ID is ' . $row['User_id'] .'"); </script>';
-                echo '<script> window.location.href = "menu.php"; </script>';
+                echo '<script> window.location.href = "../php/menu.php"; </script>';
             } else{
                 die('Error : ' . mysqli_connect_error());
             }
         }
     } else{
         echo '<script> alert(". . . Passwords Not Macthing . . ."); </script>';
-        echo '<script> window.location.href = "signup.html"; </script>';
+        echo '<script> window.location.href = "../html/signup.html"; </script>';
     }
 
 ?>

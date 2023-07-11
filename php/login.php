@@ -19,14 +19,14 @@ if(!$conn){
     $res1 = mysqli_query($conn,$sql1);
 
     if($res->num_rows > 0){
-        header('Location: menu.php');
+        header('Location: ../php/menu.php');
     } else{
         if($res1->num_rows > 0){
             echo '<script>alert(". . . Incorrect Password . . .");</script>';
-            echo '<script> window.location.href = "login.html"; </script>';
+            echo '<script> window.location.href = "../html/login.html"; </script>';
         } else{
             echo '<script>alert(". . . No Such User Exists . . .");</script>';
-            echo '<script> window.location.href = "login.html"; </script>';
+            echo '<script> window.location.href = "../html/login.html"; </script>';
         }
     }    
 }

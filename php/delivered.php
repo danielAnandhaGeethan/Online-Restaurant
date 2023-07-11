@@ -16,7 +16,7 @@
         $sql1 = "delete from cart where User_id = $userID";
         $res1 = mysqli_query($conn,$sql1);
 
-        echo '<script> window.location.href = "menu.php"; </script>';
+        echo '<script> window.location.href = "../php/menu.php"; </script>';
     }
 
 ?>

@@ -18,12 +18,12 @@
 ?>
 
 <head>
-    <link rel="stylesheet" href="CSS/cart_orders.css">
+    <link rel="stylesheet" href="../css/cart_orders.css">
 </head>
 
 <body>
     <h2>CART</h2>
-    <button id="home" onclick="window.location.href='index.php'"><b>HOME</b></button>
+    <button id="home" onclick="window.location.href='../php/index.php'"><b>HOME</b></button>
 
     <div class="container">
         <div class="header">
@@ -51,7 +51,7 @@
                 $row1 = $res1->fetch_assoc();   
     ?>  
         <div class="remove">
-            <form action="delete.php" method="POST">
+            <form action="../php/delete.php" method="POST">
                 <div style="display:none;">
                     <input type="text" name="uname" value="<?php echo $userID; ?>">
                     <input type="text" name="item_id" value="<?php echo $temp; ?>">
@@ -87,7 +87,7 @@
         }
         ?>
         <div class="order">
-            <form action="order.php" method="POST">
+            <form action="../php/order.php" method="POST">
                 <div style="display:none;">
                     <input type="text" name="user_id" value="<?php echo $userID; ?>">
                 </div>

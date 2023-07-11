@@ -11,7 +11,7 @@
         $sql = "delete from cart where User_id = $userID and item_id = $itemID";
         $res = mysqli_query($conn,$sql);
 
-        header('Location: cart.php');
+        header('Location: ../php/cart.php');
     }
 
 ?>

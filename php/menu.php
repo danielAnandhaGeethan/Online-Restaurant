@@ -1,15 +1,15 @@
-<link rel="stylesheet" href="CSS/menu.css">
-<script src="menu.js"></script>
+<link rel="stylesheet" href="../css/menu.css">
+<script src="../menu.js"></script>
 
 
 <body>
 <div class="top">
     <input type="search" id="search" placeholder="Search . . ." name="search">
-    <button id="home" onclick="window.location.href='index.php'"><b>HOME</b></button>
-    <button id="orders" onclick="window.location.href='orders.php'"><b>ORDERS</b></button>
-    <button id="cart" onclick="window.location.href='cart.php'"><b>CART</b></button>
-    <button id="logout" onclick="window.location.href='logout.php'"><b>LOGOUT</b></button>
-    <button id="dp" onclick="window.location.href = 'profile.html';"><img id="dp_image" src="
+    <button id="home" onclick="window.location.href='../php/index.php'"><b>HOME</b></button>
+    <button id="orders" onclick="window.location.href='../php/orders.php'"><b>ORDERS</b></button>
+    <button id="cart" onclick="window.location.href='../php/cart.php'"><b>CART</b></button>
+    <button id="logout" onclick="window.location.href='../php/logout.php'"><b>LOGOUT</b></button>
+    <button id="dp" onclick="window.location.href = '../html/profile.html';"><img id="dp_image" src="
     <?php
         session_start();
         $conn = mysqli_connect("localhost","root","","food");
@@ -67,7 +67,7 @@ if(!$conn){
             ?>
 
             <div class="container">
-                <form action="addToCart.php" method="POST">
+                <form action="../php/addToCart.php" method="POST">
                     <div class="ID" name="ID" style="display:none;">
                         <input type="text" name="itemID" value="<?php echo $row['item_ID'] ?>">
                     </div>

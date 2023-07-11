@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
 
     <body>
@@ -19,14 +19,14 @@
             <?php
                 } else{        
             ?>
-                    href="login.html";
+                    href="../html/login.html";
             <?php } ?>
             ><button class="box" id="login">LOGIN</button></a>
-            <a href="signup.html"><button id="signup" class="box">SIGN UP</button></a>
+            <a href="../html/signup.html"><button id="signup" class="box">SIGN UP</button></a>
         </div>
         <script>
             document.getElementById('header').addEventListener("click", function(){
-                window.location.href = "index.php";
+                window.location.href = "../php/index.php";
             });
         </script>
     </body>

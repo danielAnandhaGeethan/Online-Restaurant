@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="CSS/order.css">
+    <link rel="stylesheet" href="../css/order.css">
 </head>
 
 <?php
@@ -28,26 +28,30 @@
 <body>
     
     <h2>ORDER</h2>
-    <button id="home" onclick="window.location.href='index.php'"><b>HOME</b></button>
+    <button id="home" onclick="window.location.href='../php/index.php'"><b>HOME</b></button>
 
-    <form action="placeOrder.php" method="GET">
+    <form action="../php/placeOrder.php" method="GET">
         <input type="text"name="UserID" value="
         <?php 
+            echo "ID : ";
             echo $userID;
         ?>
         ">
         <input type="text"name="Username" value="
         <?php 
+            echo "Name : ";
             echo $row2['Username'];
         ?>
         ">
         <input type="text"name="itemCount" value="
         <?php 
+            echo "Qty : ";
             echo $row['SUM(quantity)'];
         ?>
         ">
         <input type="text"name="totalPrice" value="
         <?php
+            echo "Total : ";
             echo "$" . $row1['SUM(price)'];
         ?>
         ">

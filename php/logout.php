@@ -4,6 +4,6 @@
     unset($_SESSION['userID']);
     session_destroy();
 
-    header('Location: index.php');
+    header('Location: ../php/index.php');
 
 ?>

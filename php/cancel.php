@@ -10,7 +10,7 @@
         $sql = "delete from orders where UserID = $userID where Status = 'IN PROGRESS'";
         $res = mysqli_query($conn,$sql);
 
-        header('Location: menu.php');
+        header('Location: ../php/menu.php');
     }
 
 ?>

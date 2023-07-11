@@ -27,7 +27,7 @@ if(!$conn){
         //echo '<script>alert("Password Sent via Mail");</script>';
 
         echo '<script> alert("' . $message . '"); </script>';
-        echo '<script> window.location.href = "login.html"; </script>';
+        echo '<script> window.location.href = "../html/login.html"; </script>';
     }
 
 }

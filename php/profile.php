@@ -8,7 +8,7 @@
 
     $conn = mysqli_connect("localhost","root","","food");
 
-    $target_dir = "CSS/IMAGES/";
+    $target_dir = "../css/IMAGES/";
     $target_file = $target_dir.basename($_FILES["fileToUpload"]["name"]);
 
     $userID = $_SESSION['userID'];
@@ -18,7 +18,7 @@
         if($uname != ""){
             $sql = "update user set Username = '$uname' where User_id = $userID";
             $res = mysqli_query($conn,$sql);   
-            header('Location: profile.html');    
+            header('Location: ../html/profile.html');    
         }
 
         if($pass != ""){
@@ -26,23 +26,23 @@
                 if($pass == $confPass){
                     $sql = "update user set Password = '$pass' where User_id = $userID";
                     $res = mysqli_query($conn,$sql); 
-                    header('Location: profile.html');
+                    header('Location: ../html/profile.html');
                     
                 } else{
                     echo '<script> window.alert("!!!PASSWORDS DON\'T MATCH!!!"); </script>';
-                    echo '<script> window.location.href = "profile.html"; </script>';
+                    echo '<script> window.location.href = "../html/profile.html"; </script>';
                 }
             } else{
                 echo '<script> window.alert("CONFIRM THE PASSWORD") </script>';
-                echo '<script> window.location.href = "profile.html"; </script>';
+                echo '<script> window.location.href = "../html/profile.html"; </script>';
             }
         }
 
-        if($target_file != "CSS/IMAGES/"){
+        if($target_file != "../css/IMAGES/"){
             move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$target_file);
             $sql = "update user set dp = '$target_file' where User_id = $userID";
             $res = mysqli_query($conn,$sql);
-            header('Location: profile.html');
+            header('Location: ../html/profile.html');
         }
     }
 
